@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+:root {
+    ---bg-color: #160d07;
+    ---text-color: #fffdee;
+    ---second-color: #ffffff4f;
+    ----main-color: #ffa86a;
+    ---alt-color: #d6d4c8;
+    ----other-color: #7d5537;
+
+    --h1--font: 6.5rem;
+        --h2--font: 4.8rem;
+        --p--font: 1rem;
+}
+
+body {
+    color: var(---text-color);
+    background: linear-gradient(250.55deg, #120b07 0%, #311b0d 28.55%, #160d07 75.55%);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 28px 8%;
+    margin: auto;
+}
+
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+
+}
+
+.navbar a {
+    color: var(---text-color);
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: all 0.1s linear;
+}
+
+.navbar a:hover {
+    color: var(----main-color);
+}
+
+.search a {
+    display: inline-block;
+    color: var(---text-color);
+    font-size: 15px;
+    border: 1px solid var(---second-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all .7s ease;
+}
+
+.search a:hover {
+    background: var(----main-color);
+    border: 1px solid var(----main-color);
+    color: black;
+    transform: scale(1.07) translateY(-5px);
+}
+
+section {
+    padding: 90px 9% 17px;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    gap: 1rem;
+}
+
+.heading-image img {
+    width: 100%;
+    height: auto;
+}
+
+.heading-home h4 {
+    font-family: "Baskervville SC", serif;
+    color: var(----main-color);
+    margin-bottom: 20px;
+    font-size: 20px;
+
+}
+
+.heading-home h1 {
+    font-family: "Baskervville SC", serif;
+    margin-bottom: 20px;
+    font-size: 80px;
+}
+
+.emoji {
+    position: absolute;
+    transform: translateY(-30%);
+    left: -4%;
+    top: 50%;
+    padding: 0 8%;
+
+}
+
+.emoji i {
+    display: block;
+    margin: 28px 0;
+    color: var(---text-color);
+    font-size: 28px;
+    transition: all .7s ease;
+
+}
+
+.emoji i:hover {
+    color: var(----main-color);
+    transform: scale(1.07) translateY(-5px);
+}
+
+.arrow-box {
+    position: absolute;
+    bottom: 12%;
+    right: 35%;
+
+}
+
+.arrow-box i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: var(----main-color);
+    color: var(---bg-color);
+    border-radius: 60%;
+    font-size: 35px;
+    transition: all .7s ease;
+    border: 1px solid transparent;
+}
+
+.arrow-box i:hover {
+    color: var(----main-color);
+    border: 1px solid var(----main-color);
+    background: transparent;
+}
+
+.about {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+}
+
+.jack-heading h1 {
+    font-family: "Bona Nova SC", serif;
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+
+.jack-heading p {
+    margin-bottom: 40px;
+}
+
+.jack-heading a {
+    display: inline-block;
+    border: 1px solid var(---second-color);
+    padding: 10px 15px;
+    color: var(---text-color);
+
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .7s ease;
+
+
+}
+
+.jack-heading a:hover {
+    color: var(---bg-color);
+    transform: scale(1.07) translateY(-5px);
+    background: var(----main-color);
+}
+
+header.sticky {
+    background: linear-gradient(250.55deg, #120b07 0%, #311b0d 28.55%, #160d07 75.55%);
+    padding: 15px 8%;
+}
+
+.head-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.head-left h4 {
+    font-size: 50px;
+    font-family: "Bona Nova SC", serif;
+}
+
+.head-right h4 {
+    font-size: 25px;
+    font-family: "Bona Nova SC", serif;
+}
+.photo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.photo-img img{
+    max-width: 250px;
+    width: 100%;
+    height: 100%;
+    transition: all .7s ease;
+}
+
+.photo-img img:hover{
+    transform: scale(1.07) translateY(-5px);
+    cursor: pointer;
+}
+.pht{
+    position: relative;
+    background: linear-gradient(rgba(255, 168, 102, 0.35) 0%, rgba(3, 3, 3, 0.77) 64%, rgba(3, 3, 3)100%);
+    border-radius: 0.8rem;
+    border: 1px solid #352317;
+    padding: 40px 60px;
+}
+
+.pht h4{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Bona Nova SC", serif;
+    margin-bottom: 15px;
+}
+
+.pht p{
+    text-align: center;
+    font-size: 15px;
+    
+}
+
+.pht p:hover{
+    color: var(----main-color);
+}
+
+
+
+.cart i{
+    font-size: 20px;
+    position: absolute;
+    top: 0%;
+    right: 1px;
+    width: 40px;
+    height: 40px;
+    background: var(----main-color);
+    border-radius: 0px 0.8rem 0px 0px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #120b07;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 20px;
+}
+
+.text-left h2{
+    font-size: 50px;
+    font-family: "Bona Nova SC", serif;
+}
+
+.text-right h4{
+    font-size: 20px;
+}
+.text-img img{
+    border-radius: 0.8rem;
+    max-width: 550px;
+    width: 100%;
+    height: 100%;
+}
+
+.exb-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-top: 4rem;
+   
+ 
+}
+
+
+.text-line {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+   
+   
+}
+
+.line h2{
+    font-size: 30px;
+    font-family: "Bona Nova SC", serif;
+}
+
+.let{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.let h1{
+    font-family: "Bona Nova SC", serif;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.items{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.let p{
+    font-size: 15px;
+}
+
+.items a{
+    display: inline-block;
+    color:var(----main-color);
+    padding:9px 15px ;
+    margin: 0 20px;
+    border: 1px solid  var(---second-color);
+    text-transform: uppercase;
+    margin-top: 20px;
+    border-radius: 7px;
+    transition: all .7s ease;
+}
+
+.items a:hover{
+    border-radius: 1px solid var(---bg-color);
+    border-radius: 7px;
+    background: var(----main-color);
+    color: #120b07;
+    transform: scale(1.07) translateY(-5px);
+    cursor: pointer;
+
+}
